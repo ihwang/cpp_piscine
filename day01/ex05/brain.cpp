@@ -1,7 +1,23 @@
-#include "brain.hpp"
+#include "Brain.hpp"
 
-std::string& brain::identify(void)
+Brain::Brain(void)
 {
-    std::string address = this
-    return (std::string address);
+    setAddress();
+}
+
+Brain::~Brain(void)
+{
+    return ;
+}
+
+void Brain::setAddress(void)
+{
+    std::stringstream ss;
+    ss << static_cast<void*>(this);
+    address = ss.str();
+}
+
+std::string Brain::identify(void) const
+{
+    return address;
 }

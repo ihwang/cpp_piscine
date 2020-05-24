@@ -1,11 +1,15 @@
-#include <string>
+#pragma once
 
-class brain
+#include <string>
+#include <sstream>
+
+class Brain
 {
-    std::string using_hand;
-    int iq;
-    bool harmed;
+    std::string address;
 
     public:
-        std::string& identify(void);
+        Brain(void);
+        ~Brain(void);
+        void setAddress(void);
+        std::string identify(void) const;
 };
