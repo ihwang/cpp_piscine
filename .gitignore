@@ -1,8 +1,13 @@
+# Personal
 *.DS_Store
 subject*
-ref
+ref*
 *.vscode
 *.swp
+*.out
+*.dSYM
+
+
 # Prerequisites
 *.d
 
