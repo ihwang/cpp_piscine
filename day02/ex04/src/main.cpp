@@ -83,7 +83,7 @@ int main(int ac, char **av)
     {
         std::stringstream ss;
         std::string str = av[1];
-        for (int i = 0; i < str.length(); i++)
+        for (int i = 0; i < static_cast<int>(str.length()); i++)
             if (is_invalid(str[i]))
                 exit_fail();
         ss.str(str);
